@@ -7,7 +7,7 @@ var nav = document.getElementById("myNav");
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
 
-
+// Click to open nav
 openBtn.addEventListener("click", () => {
     openNav()
 })
@@ -15,7 +15,7 @@ closeBtn.addEventListener("click", () => {
     closeNav()
 })
 
-
+// Click to close nav
 function openNav() {
   nav.classList.add("active");
 }
@@ -24,11 +24,13 @@ function closeNav() {
   nav.classList.remove("active");
 }
 
+
 // SCROLL INFINI
 
 const articleContainer = document.querySelector(".article-container")
 const watcher = document.querySelector("footer")
 
+// Function to add an article
 const addArticle = () => {
   for(let i = 0; i < 4; i++) {
   const article = document.createElement('div')
@@ -68,23 +70,32 @@ let options = {
   threshold: 1,
   rootMargin: "0px"
 }
+
 new IntersectionObserver(handleIntersect, options).observe(watcher)
 
 
 // CARROUSEL
 
-let slideNumber = 2;
-const header = document.querySelector('.header')
-header.style.backgroundImage = "url('./img/background1.jpg')"
-header.style.backgroundSize = "cover"
-
-function slide() {
-  for(let i=1;i<=slideNumber;i++){  
-    const header = document.querySelector('.header') 
-    const background = header.style.backgroundImage = "url('./img/background"+i+".jpg')"
-    background.style.backgroundSize = "cover"
-    
+var i = '0';
+    (function(){
+        setInterval(function(){
+             
+            i++;
+             
+            if(changeImage(i)){
+                document.querySelector('.header').style.backgroundImage = 'url(./img/background1.jpg)'
+                
+            }else {
+                document.querySelector('.header').style.backgroundImage = 'url(./img/background2.jpg)'
+            }
+        }, 4000);
+    })();
  
-}}
+    function changeImage(number){
+        number=parseInt(number);
+      if((number & 1) == '0'){
+        return true
+      } 
+    }
 
 
