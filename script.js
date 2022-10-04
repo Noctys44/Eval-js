@@ -74,7 +74,7 @@ let options = {
 new IntersectionObserver(handleIntersect, options).observe(watcher)
 
 
-// CARROUSEL
+// CAROUSSEL
 
 var i = '0';
     (function(){
