@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Eval JavaScript</title>
+</head>
+<body>
+
+    <!-- DEBUT HEADER -->
+    <header>
+        
+        <div class="header">
+            <!-- <div class="menu-burger">
+                <button class="burger">&#9776;</button>
+            </div> -->
+            <div id="myNav" class="nav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                  <li><a href="#">Louer une voiture</a></li>
+                  <li><a href="#">Louer un utilitaire</a></li>
+                  <li><a href="#">Réserver un chauffeur</a></li>
+                  <li><a href="#">Découvrez nos agences</a></li>
+                  <li><a href="#">Mon compte</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              
+              <a href="#" id="openBtn">
+                <span class="burger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </a>
+            <div class="header-title">
+                <h1>Bienvenue à bord</h1>
+                <p>Location de voiture 24h/24 et 7j/7</p>
+            </div>
+            
+            <div class="background-form">
+                <form>
+                    <div class="input-form">
+                        <div class="margin">
+                            <select name="address" id="address">Adresse de départ
+                                <option value="Address">Adresse de départ</option>
+                            </select>
+                        </div>
+                        <div class="margin">
+                            <input type="text" name="date" id="start-date" placeholder="Début de location" onfocus="(this.type = 'date')">
+                        
+                        </div>
+                        <div class="margin">
+                            <input type="text" name="date" id="end-date" placeholder="Fin de location" onfocus="(this.type = 'date')">
+                        </div>
+                    
+                        <button type="submit" class="btn">Valider ma recherche</button>
+                    </div>
+
+                </form>
+            </div>
+        </header>
+
+        <!-- FIN HEADER -->
+
+        <!-- DEBUT MAIN -->
+        <main>
+            <div class="container">
+                <div class="results">
+                    <p>7 résultats</p>
+                    <select name="" id="price">
+                        <option value="">Prix croissant</option>
+                    </select>
+                </div>
+
+                <div class="article">
+
+                    <!-- DEBUT ARTICLE 1 -->
+
+                    <article>
+                        <div class="main-article">
+                            <div>
+                                <img class="img-article" src="./img/vehicule1.png" alt="vehicule1">
+                            </div>
+                            <div>
+                                <div class="describe-article">
+                                    <div class="margin-article">
+                                        <h3>Peugeot 208</h3>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.5/km supplémentaire)</p>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">999 € - Agence de Paris</p>
+                                    </div>
+                                </div>
+                                <div class="margin-article">
+                                    <button type="submit" class="btn-article">Réservez et payer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FIN ARTICLE 1 -->
+
+                    <!-- DEBUT ARTICLE 2 -->
+
+                    <article>
+                        <div class="main-article">
+                            <div>
+                                <img class="img-article" src="./img/vehicule2.png" alt="vehicule2">
+                            </div>
+                            <div>
+                                <div class="describe-article">
+                                    <div class="margin-article">
+                                        <h3>Ford Focus</h3>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.5/km supplémentaire)</p>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">999 € - Agence de Paris</p>
+                                    </div>
+                                </div>
+                                <div class="margin-article">
+                                    <button type="submit" class="btn-article">Réservez et payer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FIN ARTICLE 2 -->
+
+                    <!-- DEBUT ARTICLE 3 -->
+
+                    <article>
+                        <div class="main-article">
+                            <div>
+                                <img class="img-article" src="./img/vehicule3.png" alt="vehicule3">
+                            </div>
+                            <div>
+                                <div class="describe-article">
+                                    <div class="margin-article">
+                                        <h3>Audi A1</h3>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.5/km supplémentaire)</p>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">999 € - Agence de Paris</p>
+                                    </div>
+                                </div>
+                                <div class="margin-article">
+                                    <button type="submit" class="btn-article">Réservez et payer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FIN ARTICLE 3 -->
+
+                    <!-- DEBUT ARTICLE 4 -->
+
+                    <article>
+                        <div class="main-article">
+                            <div>
+                                <img class="img-article" src="./img/vehicule4.png" alt="vehicule4">
+                            </div>
+                            <div>
+                                <div class="describe-article">
+                                    <div class="margin-article">
+                                        <h3>Opel Mokka</h3>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">Diesel, 5 portes, GPS, Autoradio, Forfait 1000km (0.5/km supplémentaire)</p>
+                                    </div>
+                                    <div class="margin-article">
+                                        <p class="p-size">999 € - Agence de Paris</p>
+                                    </div>
+                                </div>
+                                <div class="margin-article">
+                                    <button type="submit" class="btn-article">Réservez et payer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- FIN ARTICLE 4 -->
+                </div>
+                
+                <div class="contain">
+                    <div class="article-container"></div>
+                    
+                    <div class="intersection-watcher"></div>
+                </div>
+            </div>
+        </main>
+        <!-- FIN MAIN -->
+
+        <!-- DEBUT FOOTER -->
+
+        <footer>
+            <div class="footer">
+                <div>
+                    <img class="img-agence" src="./img/agence.jpg" alt="agence">
+                </div>
+                <div class="address-agence">
+                    <div>
+                        <p class="p-size">Notre agence de <strong>Paris</strong></p>
+                    </div>
+                    <div>
+                        <p class="p-size">300 Boulevard de Vaugirard, 75015 Paris</p>
+                    </div>
+                    <div>
+                        <p class="p-size">Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+                    </div>
+                    <div>
+                        <p class="p-size">01 49 78 21 33</p>
+                    </div>
+                    <div>
+                        <p class="p-size">contact@vtc.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- FIN FOOTER -->
+    
+    <script src="./script.js"></script>
+</body>
+</html>
